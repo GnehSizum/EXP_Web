@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生信息提交页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 25px;
+            background-color: #e5ebf7;
+        }
+
+        header {
+            background-image: url('topbg.png');
+            background-size: cover;
+            height: 120px;
+            text-align: center;
+        }
+
+        #left-image {
+            height: 60px;
+            margin-right: 170px;
+            margin-top: 30px;
+        }
+
+        #right-image {
+            height: 30px;
+            margin-left: 170px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        #introduction {
+            width: 40%;
+        }
+
+        #form {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 120px;
+            margin-bottom: 30px;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            width: 96%;
+            padding: 10px;
+            font-size: 0.9em;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.2em;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img id="left-image" src="logo.png" alt="Image 1">
+        <img id="right-image" src="topwords.png" alt="Image 2">
+    </header>
+
+    <main>
+        <div id="introduction">
+            <h2>学院专业介绍</h2>
+            <table>
+                <tr>
+                    <th>专业</th>
+                    <th>介绍</th>
+                </tr>
+                <tr>
+                    <td><b>通信工程</b></td>
+                    <td>&emsp;&emsp;培养适应社会主义现代化建设和未来社会与科技发展需要的，具有家国情怀、批判性思维、创造创新能力，懂交流、善合作，具备数学、物理和计算机等相关学科的知识基础；掌握电子电路基本理论、信号分析与处理基础理论、电磁场理论基本知识、信息系统理论，以及通信理论与技术、通信网络和通信系统的相关基础理论；具备在信息与通信工程领域中从事研究、设计、制造、网络运营所需的学习能力、实践能力和创新创业能力的复合型人才。</td>
+                </tr>
+                <tr>
+                    <td><b>信息工程</b></td>
+                    <td>&emsp;&emsp;信息工程专业是对应信息通信技术产业的一个宽口径专业，培养具有扎实的数学、物理和计算机等自然科学知识基础，具备综合运用电子电路与数字系统、信号与信息处理技术、通信与计算机网络技术，解决信息获取、信息传输、处理和应用面临的复杂工程问题的能力，成为具有信息通信技术产业专业知识、具备自主学习能力和可持续发展能力的复合型人才。学生毕业后在电子、信息与通信工程以及覆盖智能信息处理的各个领域从事与电子信息系统的生产、维护、集成、管理和运营有关的工作。</td>
+                </tr>
+                <tr>
+                    <td><b>空间信息与数字技术</b></td>
+                    <td>&emsp;&emsp;空间信息与数字技术专业整合通信、网络、导航定位、遥感和计算机技术，研究空间信息数字化、网络化、可视化和智能化，推进空间信息数字化转换进程，推动数字工程实现及在相关行业领域的应用。培养富有科学素质、创新精神、实践能力和国际视野，系统掌握空间信息与数字技术专业的基本理论、基本知识、基本技能与方法，具备良好的科学思维和专业技能，具有较强的知识获取能力、实践动手能力、以及工程实际设计能力，能够在相关领域从事科研、设计、开发、制造和管理的具有宽口径知识和较强适应能力及科学创新意识的高级技术人才。</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="form">
+            <h2>&emsp;&emsp;&emsp;&emsp;学生信息提交表单</h2>
+            <form action="target.html" method="get">
+                <table>
+                    <label for="name"><b>姓 名 :</b></label><br>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="phone"><b>电 话 :</b></label><br>
+                    <input type="text" id="phone" name="phone" required><br>
+
+                    <label for="qq"><b>Q Q :</b></label><br>
+                    <input type="text" id="qq" name="qq" required><br>
+
+                    <label for="major"><b>专 业 :</b></label><br>
+                    <select id="major" name="major">
+                        <option value="通信">通信工程</option>
+                        <option value="信息">信息工程</option>
+                        <option value="测控">空间信息与数字技术</option>
+                    </select><br><br>
+
+                    <label for="check">请勾选如下选项 : </label><br>
+                    <input type="checkbox" name="checkbox" id="agree1">
+                    <label for="agree1"> 我爱吉林大学</label><br>
+                    <input type="checkbox" name="checkbox" id="agree2">
+                    <label for="agree2"> 我爱通信工程学院</label><br>
+
+                    <input type="submit" value="提交">
+                </table>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
