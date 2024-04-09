@@ -1,0 +1,15 @@
+Alice 90
+Bob 85
+Carol 78
+David 67
+Emily 45
+Frank 59
+Grace 72
+Henry 81
+Ivy 92
+Jack 88
+Kelly 70
+Linda 65
+Mike 77
+Nancy 83
+Oscar 95
